@@ -1,4 +1,3 @@
-Here's a README.md file for your Lane Line Detection project:
 # Lane Line Detection
 
 Lane Line Detection is a Python project for detecting and visualizing lane lines in images and videos using OpenCV and computer vision techniques.
@@ -19,7 +18,7 @@ The project implements various image processing and computer vision algorithms t
 
 
 ```bash
-git clone [<repo>](https://github.com/WaliMuhammadAhmad/LaneLineDetection.git)
+git clone https://github.com/WaliMuhammadAhmad/LaneLineDetection.git
 ```
 
 Navigate to the project directory:
