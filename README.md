@@ -1,52 +1,52 @@
+Here's a README.md file for your Lane Line Detection project:
 # Lane Line Detection
 
-Lane Line Detection is a Python project using OpenCV to detect and visualize lane lines in images and videos. The project also includes functionality to analyze road surface conditions.
+Lane Line Detection is a Python project for detecting and visualizing lane lines in images and videos using OpenCV and computer vision techniques.
+
+## Overview
+
+The project implements various image processing and computer vision algorithms to detect lane lines on roads in images and videos. It includes functionalities such as edge detection, region of interest selection, Hough line detection, averaging detected lines, and lane width calculation.
 
 ## Features
 
-- **Lane Detection:** Utilizes Canny edge detection and Hough line transform to identify and draw lane lines on images and videos.
-- **Road Surface Analysis:** Evaluates road surface conditions based on pixel intensity in a thresholded image.
+- Edge detection using the Canny edge detector
+- Region of interest selection to focus on the lane area
+- Hough line detection for finding lines in the image
+- Averaging and extrapolating detected lines to generate lane lines
+- Calculation of lane width based on detected lane lines
 
-## How to Use
+## How to get started
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/WaliMuhammadAhmad/LaneLineDetection.git
-   cd LaneLineDetection
-   ```
-2. Install Dependencies:
 
 ```bash
-pip install opencv-python numpy matplotlib
+git clone [<repo>](https://github.com/WaliMuhammadAhmad/LaneLineDetection.git)
 ```
-3. Run Lane Detection on an Image:
+
+Navigate to the project directory:
+
+```bash
+cd LaneLineDetection
+```
+
+### Install the required dependencies:
+
+```bash
+pip install numpy matplotlib opencv-python
+```
+
+### Running the Code
+
+1. Run the main script:
 
 ```bash
 python main.py
 ```
-4. Run Lane Detection on a Video:
+This script will process the test image included in the repository, detect lane lines, and display the result.
 
-```bash
-python main.py --video
-```
-Press 'q' to exit the video preview.
+3. To process a video, replace `"test2.mp4"` with the path to your video file in the `cap = cv2.VideoCapture("test2.mp4")` line of the code and run the script.
 
-5. Road Surface Analysis
-The project includes an additional feature to analyze road surface conditions based on pixel intensity in a thresholded image.
+4. Press the 'q' key to exit the video playback.
 
-## Examples
-Image Processing:
+## Contributing
 
-```bash
-Copy code
-python main.py
-```
-Video Processing:
-
-```bash
-Copy code
-python main.py --video
-```
-
-## Contributions
-Feel free to contribute, report issues, or suggest improvements!
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any improvements or bug fixes.
